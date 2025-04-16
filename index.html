@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAKAR | NGO Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  
+     /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #00695c;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: #e0f2f1;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.cards li {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #00695c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Team */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.member {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards li, .member {
+    font-size: 0.95rem;
+  }
+}
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SAKAR</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Empowering Lives, Building Futures</h2>
+    <p>SAKAR is dedicated to social change and community development.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      SAKAR is a non-governmental organization working for education, health,
+      and empowerment of underprivileged communities, established by "Sakar Tolnure" on 17th June 2022. We believe in sustainable
+      development and inclusive growth.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <ul class="cards">
+      <li>
+        <h3>Project Shiksha</h3>
+        <p>Providing free education and learning materials to children in rural areas.</p>
+      </li>
+      <li>
+        <h3>Health for All</h3>
+        <p>Organizing medical camps and spreading health awareness in villages.</p>
+      </li>
+      <li>
+        <h3>Women Empowerment</h3>
+        <p>Vocational training programs and self-help groups for women.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <h4>SAKAR TOLNURE</h4>
+        <p>Founder & Director</p>
+      </div>
+      <div class="member">
+        <h4>PRATHAMESH AMONE</h4>
+        <p>Project Coordinator</p>
+      </div>
+      <div class="member">
+        <h4>SHUBHAM MENTHE</h4>
+        <p>Field Officer</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@sakar.org</p>
+    <p>Phone: +91-8329135108</p>
+    <p>Address: 52, Swapnasakar, Samarth Park, Akkalkot, Solapur, Maharashtra, India - 413216</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SAKAR NGO. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
